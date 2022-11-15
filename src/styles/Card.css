@@ -1,0 +1,18 @@
+.card{
+    border-color: #D7D7D7;
+    border-radius: 20px;
+    width: 200px;
+    margin: 1rem;
+}
+
+.card-image{
+    height: 200px;
+}
+
+.title, .distance{
+    float: left;
+}
+
+.price, .duration{
+    float: right;
+}

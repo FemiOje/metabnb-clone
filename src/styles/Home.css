@@ -1,0 +1,72 @@
+#hero {
+    display: flex;
+    flex-direction: row;
+    gap: 11rem;
+    margin: 2rem;
+    margin-top: 5rem;
+}
+
+
+.hero-text {
+    align-self: center;
+}
+
+.hero-text>h1>span {
+    color: #A02279;
+}
+
+#sponsors {
+    background-color: #A02279;
+}
+
+.sponsors-logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sponsors-logos > img {
+    margin: auto;
+    padding: 1rem;
+}
+
+#collection > h1{
+    text-align: center;
+}
+
+.all-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+
+.all-cards > *{
+    border: 1px solid black;
+    /* border-radius: 20px; */
+    /* border-color: #A02279; */
+    padding: 2rem;
+}
+
+.learn-more {
+    /* background-color: white; */
+    color: #A02279;
+    border: none;
+    padding: 1rem;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    border-radius: 8px;
+}
+
+.all-cards > *{
+    margin: 0 1rem;
+}
+
+#nfts {
+    display: flex;
+    flex-direction: row;
+    background-color: #A02279;
+}
+
+.nfts-text {
+    color: white;
+    align-self: center;
+}
