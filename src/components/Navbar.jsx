@@ -1,31 +1,38 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Navbar.css';
+import { Logo } from '../images/metabnb-logo.svg';
 
 const Navbar = () => {
-  return (
-    <nav>
-        <ul>
-            <li>
-                <Link to='/home'>Home</Link>
-            </li>
-            <li>
-                <Link to='/place-to-stay'>Place to stay</Link>
-            </li>
-            <li>
-                <Link to='/nfts'>NFTs</Link>
-            </li>
-            <li>
-                <Link to='/community'>Community</Link>
-            </li>
-
-            <div className='connect-wallet'>
-                <li>
-                    <Link to={'/connect-wallet'}>Connect Wallet</Link>
-                </li>
+    return (
+        <nav>
+            
+            <div className="metabnb-logo">
+                <img src={Logo} alt="metabnb" />
             </div>
-        </ul>
-    </nav>
-  )
+
+            <div className='navbar-links'>
+
+                <Link to='/home'>Home</Link>
+
+
+                <Link to='/place-to-stay'>Place to stay</Link>
+
+
+                <Link to='/nfts'>NFTs</Link>
+
+                <Link to='/community'>Community</Link>
+
+            </div>
+
+            <Link to={'/connect-wallet'} className='connect-wallet'>
+                <button className='connect-wallet-button'>
+                    Connect Wallet
+                </button>
+            </Link>
+
+        </nav >
+    )
 }
 
-export default Navbar
+export default Navbar;

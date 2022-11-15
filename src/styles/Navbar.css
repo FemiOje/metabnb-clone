@@ -1,3 +1,44 @@
-nav ul li{
-    list-style: none;
+nav{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+
+}
+
+nav > div{
+    margin: 0 1rem;
+}
+
+.metabnb-logo{
+    margin-right: auto;
+}
+
+.links{
+    margin: auto;
+}
+
+nav > div > *{
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.connect-wallet{
+    margin-left: auto;
+}
+
+.connect-wallet-button{
+    cursor: pointer;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.connect-wallet-button:hover{
+    background: #811c61;
 }
