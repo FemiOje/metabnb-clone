@@ -23,6 +23,7 @@ const Footer = () => {
           </div>
 
           <div className="copyright">
+            <br /><br /><br />
             <small> &copy; 2022 Metabnb</small>
           </div>
         </div>

@@ -26,6 +26,7 @@
 
 .hero-text {
     align-self: center;
+    font-size: larger;
 }
 
 .hero-text>h1>span {
@@ -87,7 +88,6 @@
       padding-left: 1rem;
     }
     .nfts-image{
-        /* width: 100vw; */
         overflow: hidden;
     }
   }
@@ -95,4 +95,5 @@
 .nfts-text {
     color: white;
     align-self: center;
+    font-size: larger;
 }

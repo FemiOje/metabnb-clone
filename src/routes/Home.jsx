@@ -76,7 +76,7 @@ const Home = () => {
 
         <div className="all-cards">
           {cardData.map((card) => {
-            return <Card key={cardData.id} image={cardData.image}/>
+            return <Card key={card.id} image={card.image}/>
           })}
         </div>
       </section>

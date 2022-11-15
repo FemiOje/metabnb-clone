@@ -16,7 +16,7 @@ const Card = (props) => {
       
       <div className="first-row">
         <small className='title'>Desert King</small>
-        <small classname='price'>1MBT per night</small>
+        <small className='price'>1MBT per night</small>
       </div>
 
       <br />
