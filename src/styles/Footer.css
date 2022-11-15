@@ -1,0 +1,59 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    background-color: #1D1D1E;
+    width: 100%;
+    padding: 4rem;
+    color: white;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 4; 
+    gap: 15px;
+}
+
+.footer-brand{
+    margin-bottom: 2rem;
+    grid-column: 1 ;
+    margin: auto;
+}
+
+.footer-main-logo{
+    margin: 1rem 0;
+}
+
+.social-icons-footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icons-footer > img{
+    margin: 1rem 0.5rem;
+}
+
+.community{
+    grid-column: 2;
+    margin: auto;
+}
+
+.places{
+    grid-column: 3;
+    margin: auto;
+}
+
+.about-us{
+    grid-column: 4;
+    margin: auto;
+}
+
+.footer-link{
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+
+
