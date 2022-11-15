@@ -1,13 +1,13 @@
 import React from 'react';
 import Rating from '../images/rating.svg';
-import CardImage from '../images/card-image-1.png';
 import '../styles/Card.css';
 
-const Card = () => {
+
+const Card = (props) => {
   return (
     <div className='card'>    
         <img 
-          src={CardImage} 
+          src={props.image} 
           alt="desert-king"
           className='card-image'
         />
@@ -15,15 +15,15 @@ const Card = () => {
         <br />
       
       <div className="first-row">
-        <span className='title'>Desert King</span>
-        <span classname='price'>1MBT per night</span>
+        <small className='title'>Desert King</small>
+        <small classname='price'>1MBT per night</small>
       </div>
 
       <br />
       
       <div className="second-row">
-        <span className="distance">2345km away</span>
-        <span className="duration">available for 2 weeks stay</span>
+        <small className="distance">2345km away</small>
+        <small className="duration">available for 2 weeks stay</small>
       </div>
 
       <br />
@@ -36,4 +36,4 @@ const Card = () => {
   )
 }
 
-export default Card
+export default Card;

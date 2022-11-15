@@ -5,14 +5,24 @@ nav{
     text-align: center;
     vertical-align: middle;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 1rem;
     position: fixed;
     top: 0;
     background-color: white;
 }
 
-nav > div{
-}
+@media screen and (max-width: 768px) {
+    nav{
+      height: 2rem ;
+      padding: 1rem 0;
+    }
+    .metabnb-logo{
+        margin: 0 ;
+    }
+    .navbar-links, .connect-wallet{
+        display: none;
+    }
+  }
 
 .metabnb-logo{
     margin-right: auto;
@@ -29,6 +39,7 @@ nav > div > *{
 
 .connect-wallet{
     margin-left: auto;
+    margin-right: 3rem;
 }
 
 .connect-wallet-button{

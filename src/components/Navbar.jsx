@@ -6,13 +6,12 @@ import MetabnbLogo from '../images/metabnb-logo.png';
 const Navbar = () => {
     return (
         <nav>
-
             <div className="metabnb-logo">
                 <img src={MetabnbLogo} alt="metabnb" />
             </div>
 
             <div className='navbar-links'>
-                <Link to='/home'>Home</Link>
+                <Link to='/'>Home</Link>
                 <Link to='/place-to-stay'>Place to stay</Link>
                 <Link to='/nfts'>NFTs</Link>
                 <Link to='/community'>Community</Link>

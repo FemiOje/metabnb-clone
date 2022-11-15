@@ -10,7 +10,40 @@ import Card from '../components/Card.jsx';
 
 const Home = () => {
 
-  const cardData = [1, 2, 3, 4, 5, 6, 7, 8];
+  const cardData = [
+    {
+      id: 1,
+      image: '../images/card-image-1.png'
+    },
+    {
+      id: 2,
+      image: '../images/card-image-2.png'
+    },
+    {
+      id: 3,
+      image: '../images/card-image-3.png'
+    },
+    {
+      id: 4,
+      image: '../images/card-image-4.png'
+    },
+    {
+      id: 5,
+      image: '../images/card-image-5.png'
+    },
+    {
+      id: 6,
+      image: '../images/card-image-6.png'
+    },
+    {
+      id: 7,
+      image: '../images/card-image-7.png'
+    },
+    {
+      id: 8,
+      image: '../images/card-image-8.png'
+    }
+  ];
   return (
     <>
       <section id='hero'>
@@ -40,10 +73,10 @@ const Home = () => {
 
       <section id='collection'>
         <h1>Inspiration for your next adventure</h1>
-        
+
         <div className="all-cards">
           {cardData.map((card) => {
-            return <Card />
+            return <Card key={cardData.id} image={cardData.image}/>
           })}
         </div>
       </section>
