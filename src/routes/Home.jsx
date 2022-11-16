@@ -7,42 +7,51 @@ import OpenSea from '../images/OpenSea.svg';
 import NFTsImage from '../images/nfts-image.png';
 import Card from '../components/Card.jsx';
 
+import cardImage1 from '../images/card-image-1.png';
+import cardImage2 from '../images/card-image-2.png';
+import cardImage3 from '../images/card-image-3.png';
+import cardImage4 from '../images/card-image-4.png';
+import cardImage5 from '../images/card-image-5.png';
+import cardImage6 from '../images/card-image-6.png';
+import cardImage7 from '../images/card-image-7.png';
+import cardImage8 from '../images/card-image-8.png';
+
 
 const Home = () => {
 
   const cardData = [
     {
       id: 1,
-      image: '../images/card-image-1.png'
-    },
-    {
+      image: cardImage1
+  },
+  {
       id: 2,
-      image: '../images/card-image-2.png'
-    },
-    {
+      image: cardImage2
+  },
+  {
       id: 3,
-      image: '../images/card-image-3.png'
-    },
-    {
+      image: cardImage3
+  },
+  {
       id: 4,
-      image: '../images/card-image-4.png'
-    },
-    {
+      image: cardImage4
+  },
+  {
       id: 5,
-      image: '../images/card-image-5.png'
-    },
-    {
+      image: cardImage5
+  },
+  {
       id: 6,
-      image: '../images/card-image-6.png'
-    },
-    {
+      image: cardImage6
+  },
+  {
       id: 7,
-      image: '../images/card-image-7.png'
-    },
-    {
+      image: cardImage7
+  },
+  {
       id: 8,
-      image: '../images/card-image-8.png'
-    }
+      image: cardImage8
+  }
   ];
   
   return (

@@ -16,13 +16,16 @@ const Card = (props) => {
       
       <div className="first-row">
         <small className='title'>Desert King</small>
+        <br />
         <small className='price'>1MBT per night</small>
       </div>
 
       <br />
+      <br />
       
       <div className="second-row">
         <small className="distance">2345km away</small>
+        <br />
         <small className="duration">available for 2 weeks stay</small>
       </div>
 

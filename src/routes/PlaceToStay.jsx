@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../components/Card';
 import { cards } from '../data/data';
 
+
 const PlaceToStay = () => {
   return (
     <div 

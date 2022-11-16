@@ -5,8 +5,9 @@ const ComingSoon = () => {
     <div>
     
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      ComingSoon
-      
+      <h1 style={{'textAlign': 'center'}}>Coming Soon</h1>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
     </div>
   )
 }
