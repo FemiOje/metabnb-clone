@@ -22,6 +22,12 @@ nav{
     .navbar-links, .connect-wallet{
         display: none;
     }
+    .dropdown-button{
+        display: flex;
+        margin-left: auto;
+        padding: 1rem;
+        cursor: pointer;
+    }
   }
 
 .metabnb-logo{
@@ -53,4 +59,8 @@ nav > div > *{
 }
 .connect-wallet-button:hover{
     background: #811c61;
+}
+
+.dropdown-button{
+    display: none;
 }

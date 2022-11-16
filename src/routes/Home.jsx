@@ -44,6 +44,7 @@ const Home = () => {
       image: '../images/card-image-8.png'
     }
   ];
+  
   return (
     <>
       <section id='hero'>
@@ -76,7 +77,7 @@ const Home = () => {
 
         <div className="all-cards">
           {cardData.map((card) => {
-            return <Card key={card.id} image={card.image}/>
+            return <Card key={card.id} {...card}/>
           })}
         </div>
       </section>
