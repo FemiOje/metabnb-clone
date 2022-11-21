@@ -11,9 +11,6 @@ nav {
     background-color: white;
 }
 
-.dropdown{
-    display: none;
-}
 
 
 .metabnb-logo {
@@ -26,7 +23,10 @@ nav {
 
 nav>div>* {
     text-decoration: none;
-    /* margin: 0 1rem; */
+}
+
+.navbar-links > *{
+    margin: 0 1rem;
 }
 
 .connect-wallet {
@@ -48,6 +48,9 @@ nav>div>* {
     background: #811c61;
 }
 
+.dropdown{
+    display: none;
+}
 
 .dropdown-links {
     margin-top: 5rem;
