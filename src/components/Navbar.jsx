@@ -42,46 +42,49 @@ const Navbar = () => {
 
             </nav >
 
-            {isDropdownOpen &&
-                <div className='dropdown-links'>
-                    <Link to='/'>
-                        <div
-                            className='dropdown-link'
-                            onClick={toggleDropdown}
-                        >
-                            Home
-                        </div>
-                    </Link>
+            <div className="dropdown-container">
+                {isDropdownOpen &&
+                    <div className='dropdown-links'>
+                        <Link to='/'>
+                            <div
+                                className='dropdown-link'
+                                onClick={toggleDropdown}
+                            >
+                                Home
+                            </div>
+                        </Link>
 
-                    <Link to='/place-to-stay'>
-                        <div
-                            className='dropdown-link'
-                            onClick={toggleDropdown}
-                        >
-                            Place to stay
-                        </div>
-                    </Link>
+                        <Link to='/place-to-stay'>
+                            <div
+                                className='dropdown-link'
+                                onClick={toggleDropdown}
+                            >
+                                Place to stay
+                            </div>
+                        </Link>
 
-                    <Link to='/nfts'>
-                        <div
-                            className='dropdown-link'
-                            onClick={toggleDropdown}
-                        >
-                            NFTs
-                        </div>
-                    </Link>
+                        <Link to='/nfts'>
+                            <div
+                                className='dropdown-link'
+                                onClick={toggleDropdown}
+                            >
+                                NFTs
+                            </div>
+                        </Link>
 
-                    <Link to='/community'>
-                        <div
-                            className='dropdown-link'
-                            onClick={toggleDropdown}
-                        >
-                            Community
-                        </div>
-                    </Link>
-                </div>
+                        <Link to='/community'>
+                            <div
+                                className='dropdown-link'
+                                onClick={toggleDropdown}
+                            >
+                                Community
+                            </div>
+                        </Link>
+                    </div>
 
-            }
+                }
+            </div>
+
         </>
     )
 }

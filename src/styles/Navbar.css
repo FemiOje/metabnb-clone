@@ -11,8 +11,6 @@ nav {
     background-color: white;
 }
 
-
-
 .metabnb-logo {
     margin-right: auto;
 }
@@ -50,6 +48,10 @@ nav>div>* {
 
 .dropdown{
     display: none;
+}
+
+.dropdown-container{
+    display: block;
 }
 
 .dropdown-links {
