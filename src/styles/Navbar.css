@@ -9,9 +9,10 @@ nav {
     position: fixed;
     top: 0;
     background-color: white;
+    box-shadow:  0px 1px 8px #808080;
 }
 
-.metabnb-logo {
+.metabnb-logo-container {
     margin-right: auto;
 }
 
@@ -46,7 +47,7 @@ nav>div>* {
     background: #811c61;
 }
 
-.dropdown{
+.dropdown-button{
     display: none;
 }
 
@@ -85,7 +86,8 @@ nav>div>* {
     }
 
     .metabnb-logo {
-        margin: 0;
+        margin: 0 1rem;
+        width: 150px;
     }
 
     .navbar-links,
@@ -93,9 +95,14 @@ nav>div>* {
         display: none;
     }
 
-    .dropdown {
+    .dropdown-button{
         display: block;
         margin-left: auto;
         cursor: pointer;
+        height: 50px;
+    }
+
+    .dropdown-link{
+        width: 90vw;
     }
 }
