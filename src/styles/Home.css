@@ -11,15 +11,13 @@
       display: flex;
       flex-direction: column;
       gap: 2px;
-      margin: 0;
-      overflow: hidden;
+      margin: auto;
+      padding-top: 3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     .hero-text{
         padding:4rem 1rem;
-    }
-    .hero-images{
-        margin: 0 auto;
-        margin-bottom: 1rem;
     }
   }
 
@@ -29,12 +27,26 @@
     font-size: larger;
 }
 
-.hero-text>h1>span {
+.hero-text > h1 > span {
     color: #A02279;
 }
 
-.hero-images{
-    margin: 2rem auto;
+@media screen and (max-width: 768px) {
+    .hero-images{
+        display: flex;
+    }
+    
+    .hero-images > img{
+        width: 90vw;
+        height: max-content;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    .hero-text{
+        padding: 0;
+    }
 }
 
 #sponsors {
