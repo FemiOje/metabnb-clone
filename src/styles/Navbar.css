@@ -22,13 +22,12 @@ nav{
     .navbar-links, .connect-wallet{
         display: none;
     }
-    .dropdown-button{
-        display: flex;
+    .dropdown{
+        display: block;
         margin-left: auto;
-        padding: 1rem;
         cursor: pointer;
     }
-  }
+}
 
 .metabnb-logo{
     margin-right: auto;
@@ -61,6 +60,27 @@ nav > div > *{
     background: #811c61;
 }
 
-.dropdown-button{
-    display: none;
+.dropdown-links{
+    margin-top: 5rem;    
 }
+
+.dropdown-links > *{
+    text-decoration: none;
+}
+
+.dropdown-link{
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+
+
+.dropdown-link:hover{
+    background-color: #e2e2e2;
+}
+
