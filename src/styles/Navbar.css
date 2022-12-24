@@ -1,15 +1,22 @@
 nav {
-    display: flex;
+    display: block;
     flex-direction: row;
     width: 100vw;
     text-align: center;
-    vertical-align: middle;
     align-items: center;
-    padding: 1rem;
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow:  0px 1px 8px #808080;
+    height: fit-content;
+    padding: 0.5rem;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
 }
 
 .metabnb-logo-container {
@@ -26,6 +33,7 @@ nav>div>* {
 
 .navbar-links > *{
     margin: 0 1rem;
+    text-decoration: none;
 }
 
 .connect-wallet {
@@ -52,11 +60,7 @@ nav>div>* {
 }
 
 .dropdown-container{
-    display: block;
-}
-
-.dropdown-links {
-    margin-top: 5rem;
+    width: 100vw;
 }
 
 .dropdown-links>* {
@@ -81,8 +85,8 @@ nav>div>* {
     nav {
         width: 100vw;
         background-color: #ffffff;
-        height: 2rem;
-        padding: 1rem 0;
+        padding: 0;
+        height: fit-content;
     }
 
     .metabnb-logo {
