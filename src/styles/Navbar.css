@@ -34,6 +34,7 @@ nav>div>* {
 .navbar-links > *{
     margin: 0 1rem;
     text-decoration: none;
+    color: black;
 }
 
 .connect-wallet {
