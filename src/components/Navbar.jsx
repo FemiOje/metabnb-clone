@@ -78,6 +78,15 @@ const Navbar = () => {
                                     Community
                                 </div>
                             </Link>
+
+                            <Link to='/connect-wallet'>
+                                <div
+                                    className='dropdown-link'
+                                    onClick={toggleDropdown}
+                                >
+                                    Connect Wallet
+                                </div>
+                            </Link>
                         </div>
 
                     }
