@@ -35,6 +35,12 @@ nav>div>* {
     margin: 0 1rem;
     text-decoration: none;
     color: black;
+    font-weight: 600;
+    transition-duration: 300ms;
+}
+
+.navbar-links > *:hover{
+    color: #8b8b8b;
 }
 
 .connect-wallet {
