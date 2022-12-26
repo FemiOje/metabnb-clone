@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import MetabnbLogo from '../images/metabnb-logo.png';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import ConnectWallet from '../routes/ConnectWallet';
 
 const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -25,11 +28,20 @@ const Navbar = () => {
                         <Link to='/community'>Community</Link>
                     </div>
 
-                    <Link to={'/connect-wallet'} className='connect-wallet'>
-                        <button className='connect-wallet-button'>
-                            Connect Wallet
-                        </button>
-                    </Link>
+                    <Popup trigger={
+                        <Link
+                            className='connect-wallet'
+                        >
+                            <button className='connect-wallet-button'>
+                                Connect Wallet
+                            </button>
+                        </Link>}
+                        modal
+                        nested
+                    >
+                        <ConnectWallet />
+                    </Popup>
+
 
                     <div className="dropdown-button">
                         <img
@@ -39,7 +51,7 @@ const Navbar = () => {
                         />
                     </div>
                 </div>
-                
+
                 <div className="dropdown-container">
                     {isDropdownOpen &&
                         <div className='dropdown-links'>
@@ -79,14 +91,21 @@ const Navbar = () => {
                                 </div>
                             </Link>
 
-                            <Link to='/connect-wallet'>
-                                <div
-                                    className='dropdown-link'
-                                    onClick={toggleDropdown}
-                                >
-                                    Connect Wallet
-                                </div>
-                            </Link>
+                            <Popup trigger={
+                                <Link>
+                                    <div
+                                        className='dropdown-link'
+                                    >
+                                        <button className='connect-wallet-button'>
+                                            Connect Wallet
+                                        </button>
+                                    </div>
+                                </Link>}
+                                modal
+                                nested
+                            >
+                                <ConnectWallet />
+                            </Popup>
                         </div>
 
                     }
