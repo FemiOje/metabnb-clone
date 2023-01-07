@@ -91,7 +91,8 @@ const Navbar = () => {
                                 </div>
                             </Link>
 
-                            <Popup trigger={
+                            <Popup 
+                            trigger={
                                 <Link>
                                     <div
                                         className='dropdown-link'
