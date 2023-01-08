@@ -6,13 +6,9 @@ import '../styles/ConnectWallet.css';
 const ConnectWallet = () => {
   return (
     <div id="modal">
-
       <div className="header">
-        <h3>Connect Wallet
-          <span style={{ 'float': 'right' }}>
-            <button> X </button>
-          </span>
-        </h3>
+        <h3>Connect Wallet</h3>
+        <button> X </button>
       </div>
 
       <hr />
@@ -22,15 +18,16 @@ const ConnectWallet = () => {
 
         <div className="metamask--button" >
           <img src={MetamaskIcon} alt="metamask" />
-          <span>
+          <p>
             Metamask
-          </span>
-          <button style={{'float': 'right', 'verticalAlign': 'center'}}> > </button>
+          </p>
+          <button> &gt; </button>
         </div>
 
         <div className="walletConnect--button">
-        <img src={walletConnectIcon} alt="walletConnect" />
+          <img src={walletConnectIcon} alt="walletConnect" />
           <p>walletConnect</p>
+          <button> &gt; </button>
         </div>
       </div>
     </div>

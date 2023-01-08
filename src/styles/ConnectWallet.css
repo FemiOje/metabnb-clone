@@ -1,33 +1,42 @@
 #modal{
-    padding: 1.5rem;
+    padding: 1rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
 }
 
 #modal button{
     background: none;
     border: none;
     color: #b1afaf;
-}
-
-.header > span > h2{
-    float: left;
-    margin-right: auto;
-}
-
-.header > span > button{
-    float: right;
     margin-left: auto;
 }
 
+#modal button:hover{
+    color: #000000;
+}
+
 .metamask--button, .walletConnect--button{
-    transition: all 300ms;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: all 200ms;
     background-color: #FFFFFF;
     border: 1px solid #f0f0f0;
     border-radius: 1rem;
     cursor: pointer;
-    padding: 1rem;
+    padding:0.1rem;
     margin: 1rem;
-    vertical-align: middle;
-    align-items: center;
+}
+
+.metamask--button > img, .walletConnect--button> img{
+    margin: 0.5rem;
+}
+
+.metamask--button > button, .walletConnect--button > button{
+    margin-left: auto;
 }
 
 .metamask--button:hover, .walletConnect--button:hover{
